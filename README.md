@@ -14,7 +14,7 @@ TalkPDF is an interactive application that allows users to upload multiple PDF f
 
 ## Requirements 📋
 
-To run this application, you need the following Python packages:
+##To run this application, you need the following Python packages:
 
 - `streamlit`
 - `google-generativeai`
@@ -24,58 +24,46 @@ To run this application, you need the following Python packages:
 - `faiss-cpu`
 - `langchain_google_genai`
 
-You can install the required packages using the following command:
+##You can install the required packages using the following command:
 
-```sh
 pip install -r requirements.txt
-Setup 🛠️
-Clone the repository to your local machine.
 
-Create a .env file in the root directory and add your Google API key:
-
+##Setup 🛠️
+1. Clone the repository to your local machine.
+2.Create a .env file in the root directory and add your Google API key:
 sh
 GOOGLE_API_KEY=your_api_key
-Install the required packages:
-
+3.Install the required packages:
 sh
 pip install -r requirements.txt
-Usage 🚀
-Run the app using the following command:
 
+##Usage 🚀
+
+1.Run the app using the following command:
 sh
 streamlit run TalkPDF.py
-Upload your PDF files using the sidebar menu.
+2.Upload your PDF files using the sidebar menu.
+3.Ask questions about the content of the uploaded PDFs using the text input field.
 
-Ask questions about the content of the uploaded PDFs using the text input field.
+##How It Works 🔍
+1.Upload PDFs: Users can upload multiple PDF files through the sidebar.
+2.Process PDFs: The app extracts text from the PDFs and splits it into chunks.
+3.Create Vector Store: The text chunks are embedded and stored in a FAISS vector store for efficient similarity search.
+4.Ask Questions: Users can ask questions about the PDF content, and the app will provide detailed answers based on the extracted text.
 
-How It Works 🔍
-Upload PDFs: Users can upload multiple PDF files through the sidebar.
+##Libraries Used 📚
+-Streamlit: Used for creating the web application interface.
+-google-generativeai: Provides access to Google Generative AI for embeddings and conversational models.
+-python-dotenv: Loads environment variables from a .env file.
+-LangChain: Used for text processing, splitting, and creating conversational chains.
+-PyPDF2: Extracts text from PDF files.
+-faiss-cpu: Efficient similarity search and clustering of dense vectors.
+-langchain_google_genai: Integrates LangChain with Google Generative AI for embedding and conversational models.
 
-Process PDFs: The app extracts text from the PDFs and splits it into chunks.
+##License ⚖️
+This project is licensed under the MIT License and can be used and modified if required.
 
-Create Vector Store: The text chunks are embedded and stored in a FAISS vector store for efficient similarity search.
-
-Ask Questions: Users can ask questions about the PDF content, and the app will provide detailed answers based on the extracted text.
-
-Libraries Used 📚
-Streamlit: Used for creating the web application interface.
-
-google-generativeai: Provides access to Google Generative AI for embeddings and conversational models.
-
-python-dotenv: Loads environment variables from a .env file.
-
-LangChain: Used for text processing, splitting, and creating conversational chains.
-
-PyPDF2: Extracts text from PDF files.
-
-faiss-cpu: Efficient similarity search and clustering of dense vectors.
-
-langchain_google_genai: Integrates LangChain with Google Generative AI for embedding and conversational models.
-
-License ⚖️
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgements 🙏
+##Acknowledgements 🙏
 Streamlit
 
 LangChain
