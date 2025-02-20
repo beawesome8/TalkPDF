@@ -33,20 +33,15 @@ pip install -r requirements.txt
 
 2.Create a .env file in the root directory and add your Google API key:
 
-sh
 GOOGLE_API_KEY=your_api_key
 
 3.Install the required packages:
 
-sh
 pip install -r requirements.txt
 
 ## Usage 🚀
 
-1.Run the app using the following command:
-
-sh
-streamlit run TalkPDF.py
+1.Run the app using the following command: streamlit run ChatWithPDF.py
 
 2.Upload your PDF files using the sidebar menu.
 
@@ -63,11 +58,17 @@ streamlit run TalkPDF.py
 
 ## Libraries Used 📚
 -Streamlit: Used for creating the web application interface.
+
 -google-generativeai: Provides access to Google Generative AI for embeddings and conversational models.
+
 -python-dotenv: Loads environment variables from a .env file.
+
 -LangChain: Used for text processing, splitting, and creating conversational chains.
+
 -PyPDF2: Extracts text from PDF files.
+
 -faiss-cpu: Efficient similarity search and clustering of dense vectors.
+
 -langchain_google_genai: Integrates LangChain with Google Generative AI for embedding and conversational models.
 
 ## License ⚖️
