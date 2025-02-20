@@ -1,4 +1,4 @@
-# TalkPDF 📄💬
+# ChatWithPDF 📄💬
 
 An app that lets you interact with PDFs to obtain data from them.
 
