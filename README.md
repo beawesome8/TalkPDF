@@ -2,7 +2,7 @@
 
 An app that lets you interact with PDFs to obtain data from them.
 
-TalkPDF is an interactive application that allows users to upload multiple PDF files and ask questions about their content. The app uses Google Generative AI and LangChain to process the PDFs and provide detailed answers based on the text within the documents.
+ChatWithPDF is an interactive application that allows users to upload multiple PDF files and ask questions about their content. The app uses Google Generative AI and LangChain to process the PDFs and provide detailed answers based on the text within the documents.
 
 ## Features ✨
 
