@@ -30,25 +30,35 @@ pip install -r requirements.txt
 
 ## Setup 🛠️
 1. Clone the repository to your local machine.
+
 2.Create a .env file in the root directory and add your Google API key:
+
 sh
 GOOGLE_API_KEY=your_api_key
+
 3.Install the required packages:
+
 sh
 pip install -r requirements.txt
 
 ## Usage 🚀
 
 1.Run the app using the following command:
+
 sh
 streamlit run TalkPDF.py
+
 2.Upload your PDF files using the sidebar menu.
+
 3.Ask questions about the content of the uploaded PDFs using the text input field.
 
 ## How It Works 🔍
 1.Upload PDFs: Users can upload multiple PDF files through the sidebar.
+
 2.Process PDFs: The app extracts text from the PDFs and splits it into chunks.
+
 3.Create Vector Store: The text chunks are embedded and stored in a FAISS vector store for efficient similarity search.
+
 4.Ask Questions: Users can ask questions about the PDF content, and the app will provide detailed answers based on the extracted text.
 
 ## Libraries Used 📚
